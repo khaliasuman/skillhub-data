@@ -28,6 +28,19 @@ edited, or rerun unless a human explicitly asks — twice, at two separate
 gates (implement → apply-and-rerun). See `PROMPTS.md` §5 for exactly how
 to phrase both.
 
+## Architecture
+
+![jobfix-agent end-to-end architecture](docs/architecture.jpg)
+
+> **Note:** this diagram shows the *available* tool surface and step
+> sequence, not a fixed execution trace. The actual number of tool calls,
+> LLM invocations, and evidence-gathering rounds varies case to case,
+> driven by the complexity of the failure pattern — a clean `run_id`
+> lookup may resolve in one or two calls, while a multi-hop upstream
+> hypothesis with a revised (ruled-out) round can invoke several more.
+> Treat the diagram as the shape of the workflow, not a step-count
+> guarantee.
+
 ## Scope
 
 Databricks only — Jobs API, SQL warehouse, notebook source, schema
