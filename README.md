@@ -1,5 +1,7 @@
 # jobfix-agent
 
+**[→ View the Skill Hub site](docs/index.html)** — opens best in a browser (GitHub's file viewer shows source, not the rendered page); see [Skill Hub](#skill-hub-this-repos-website) below for other ways to view it, including a live-hosted preview and one-time GitHub Pages setup.
+
 A reusable, assistant-agnostic skill for diagnosing failed or anomalous
 Databricks pipelines. Handed off here so any engineer — on Claude Code,
 GitHub Copilot, Genie, or an internal assistant — can point their tool at
@@ -67,7 +69,9 @@ a skill file is, how jobfix-agent works end to end, its architecture, how
 to set it up in VS Code, and how to run it under Omnigent. Single
 self-contained HTML file, no build step, no dependencies.
 
-**View it locally:**
+**Already live, no setup needed:** [claude.ai/artifact/2EC27ckuoreFAJbVFrV8ya](https://claude.ai/artifact/2EC27ckuoreFAJbVFrV8ya) — a hosted preview of this exact page, useful for sharing before you've pushed the repo anywhere.
+
+**View the repo copy locally:**
 ```
 open docs/index.html                       # macOS
 # or
