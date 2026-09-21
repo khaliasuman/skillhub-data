@@ -11,6 +11,9 @@ this repo and get consistent, evidence-driven root-cause behavior.
 skills/jobfix-agent/SKILL.md   The skill itself — read this first
 PROMPTS.md                     How to invoke it for every real scenario,
                                 plus tips for getting the best results
+docs/index.html                Skill Hub — the full overview website
+docs/architecture.jpg          Architecture diagram used in this README
+                                and on the Skill Hub site
 ```
 
 ## What it does, in one paragraph
@@ -56,6 +59,28 @@ object storage access. Signals from those systems get an honest
    `PROMPTS.md` §7.
 3. Use the prompt patterns in `PROMPTS.md` for run_id diagnosis, task-level
    scoping, data-quality signals, quick-fix flow, and HITL review/approval.
+
+## Skill Hub (this repo's website)
+
+`docs/index.html` is the full Skill Hub overview site for this repo — what
+a skill file is, how jobfix-agent works end to end, its architecture, how
+to set it up in VS Code, and how to run it under Omnigent. Single
+self-contained HTML file, no build step, no dependencies.
+
+**View it locally:**
+```
+open docs/index.html                       # macOS
+# or
+cd docs && python3 -m http.server 8000      # then visit localhost:8000
+```
+
+**Host it for free on GitHub Pages**, once this repo is pushed:
+1. On GitHub: **Settings → Pages**.
+2. Under **Build and deployment → Source**, choose `Deploy from a branch`.
+3. Branch: `main`, folder: `/docs` → **Save**.
+4. GitHub publishes it at `https://<your-org>.github.io/<repo-name>/`
+   within a minute or two — this is the same pattern the AWS ADOP sample
+   repo uses for its own README site.
 
 ## Owning team / questions
 
